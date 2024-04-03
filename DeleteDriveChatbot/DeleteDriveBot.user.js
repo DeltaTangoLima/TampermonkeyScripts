@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Delete Drive.com.au crap
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Hides annoying elements on the drive.com.au website
 // @author       DeltaTangoLima
 // @match        *://*.drive.com.au/*
@@ -13,7 +13,7 @@
 
 const remove = (sel) => document.querySelectorAll(sel).forEach(el => el.remove());
 
-remove(".liveChat_drive-container__6_tlA");
-remove(".layout_drive-layout__ad-bg__g70ix");
-remove(".layout_drive-layout__ad-bg--mobile-persist-sticky__FW1rV");
-remove(".roofrack-wrapper");
+remove('[class*="liveChat_drive-container__"]');
+remove('[class*="layout_drive-layout__ad-bg__"]');
+remove('[class*="layout_drive-layout__ad-bg--mobile-persist-sticky__"]');
+remove('[class*="roofrack-wrapper"]');
