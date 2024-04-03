@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Delete Drive.com.au chatbot
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Hides the annoying chatbot on the drive.com.au website
 // @author       DeltaTangoLima
 // @match        *://*.drive.com.au/*
@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 GM_addStyle(`
-  .liveChat_drive-container__6_tl {
+  .liveChat_drive-container__6_tlA {
     visibility: hidden;
   }
 `);
