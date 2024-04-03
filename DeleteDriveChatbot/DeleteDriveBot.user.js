@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Delete Drive.com.au chatbot
 // @namespace    http://tampermonkey.net/
-// @version      0.3
-// @description  Hides the annoying chatbot on the drive.com.au website
+// @version      0.4
+// @description  Hides annoying elements on the drive.com.au website
 // @author       DeltaTangoLima
 // @match        *://*.drive.com.au/*
 // @downloadURL  https://github.com/DeltaTangoLima/TampermonkeyScripts/raw/main/DeleteDriveChatbot/DeleteDriveBot.user.js
@@ -13,6 +13,9 @@
 
 GM_addStyle(`
   .liveChat_drive-container__6_tlA {
+    visibility: hidden;
+  }
+  .layout_drive-layout__ad-bg__g70ix layout_drive-layout__ad-bg--mobile-persist-sticky__FW1rV roofrack-wrapper {
     visibility: hidden;
   }
 `);
