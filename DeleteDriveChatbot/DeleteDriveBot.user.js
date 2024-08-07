@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Delete Drive.com.au crap
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  Hides annoying elements on the drive.com.au website
 // @author       DeltaTangoLima
 // @match        *://*.drive.com.au/*
@@ -10,6 +10,7 @@
 // @icon         https://raw.githubusercontent.com/DeltaTangoLima/TampermonkeyScripts/main/DeleteDriveChatbot/no-bots.jpg
 // @grant        GM_addStyle
 // @run-at       document-idle
+// ==/UserScript==
 
 const remove = (sel) => document.querySelectorAll(sel).forEach(el => el.remove());
 
